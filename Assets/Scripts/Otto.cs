@@ -1,12 +1,10 @@
 using UnityEngine;
 
-public class Aurora : MonoBehaviour
+public class Otto : MonoBehaviour
 {
-   
     void Start()
     {}
 
-    
     void Update()
     {}
 }
