@@ -6,8 +6,10 @@ public class Jump : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Move move;
 
     private float playerHalfHeight;
+
 
     void Start()
     {
@@ -16,7 +18,7 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && GetIsGrounded())
+        if((Input.GetKeyDown(KeyCode.Space) && GetIsGrounded()) && move.isActiveCharacter)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
