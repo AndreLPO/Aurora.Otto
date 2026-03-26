@@ -1,9 +1,11 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class CharacterSwitcher : MonoBehaviour
 {
     public Move aurora;
     public Move otto;
+    [SerializeField] private CinemachineCamera  cam;
 
     private Move current;
 
@@ -32,7 +34,13 @@ public class CharacterSwitcher : MonoBehaviour
         current = character;
 
         UpdateVisuals();
+        UpdateCameraTarget();
     }
+
+    void UpdateCameraTarget()
+    {
+        cam.Follow = current.transform;
+        cam.LookAt = current.transform;}
 
     void UpdateVisuals()
     {
