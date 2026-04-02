@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 80908957}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9599996, y: -1.2900002, z: -10}
+  m_LocalPosition: {x: -5.9599996, y: -1.4400003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -358,7 +358,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9599996, y: -1.2900002, z: -10}
+  m_LocalPosition: {x: -5.9599996, y: -1.4400003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,7 +641,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2962027833772318483, guid: 10f3cacccb0c4c547be76836eba20664, type: 3}
   m_Color: {r: 0, g: 0.8078432, b: 0.8196079, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -660,7 +660,7 @@ Transform:
   m_GameObject: {fileID: 1185529041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.0225, y: -1.5075, z: 0}
+  m_LocalPosition: {x: -3.89, y: -1.64, z: 0}
   m_LocalScale: {x: 0.645, y: 0.645, z: 0.645}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -704,7 +704,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -810,7 +810,7 @@ Transform:
   m_GameObject: {fileID: 1711753268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.24, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2154,6 +2154,7 @@ GameObject:
   - component: {fileID: 2083767430}
   - component: {fileID: 2083767435}
   - component: {fileID: 2083767434}
+  - component: {fileID: 2083767436}
   m_Layer: 7
   m_Name: Aurora
   m_TagString: Untagged
@@ -2184,7 +2185,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -2283,7 +2284,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -6447722072507503168, guid: 10f3cacccb0c4c547be76836eba20664, type: 3}
   m_Color: {r: 0.8156863, g: 0.1254902, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2302,7 +2303,7 @@ Transform:
   m_GameObject: {fileID: 2083767429}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.96, y: -1.29, z: 0}
+  m_LocalPosition: {x: -5.96, y: -1.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2344,6 +2345,25 @@ MonoBehaviour:
   rb: {fileID: 2083767430}
   spriteRenderer: {fileID: 2083767432}
   move: {fileID: 2083767434}
+--- !u!114 &2083767436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083767429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 890312d4a24b3ac49875288715e03301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Aurora
+  otto: {fileID: 1185529041}
+  ottoLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  grabDistance: 1
+  rayTransform: {fileID: 1711753269}
+  grabPosition: {fileID: 1647813516}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
