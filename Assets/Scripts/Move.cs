@@ -14,6 +14,10 @@ public class Move : MonoBehaviour
         if (!isActiveCharacter) return;
 
         moveInput = Input.GetAxis("Horizontal");
+        if (moveInput > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (moveInput < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void FixedUpdate()
