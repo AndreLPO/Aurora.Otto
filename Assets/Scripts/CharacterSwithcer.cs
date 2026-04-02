@@ -40,7 +40,8 @@ public class CharacterSwitcher : MonoBehaviour
     void UpdateCameraTarget()
     {
         cam.Follow = current.transform;
-        cam.LookAt = current.transform;}
+        cam.LookAt = current.transform;
+    }
 
     void UpdateVisuals()
     {

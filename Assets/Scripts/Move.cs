@@ -7,11 +7,19 @@ public class Move : MonoBehaviour
 
     public bool isActiveCharacter = false;
 
+    private float moveInput;
+
     void Update()
     {
         if (!isActiveCharacter) return;
 
-        float moveInput = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal");
+    }
+
+    void FixedUpdate()
+    {
+        if (!isActiveCharacter) return;
+
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
